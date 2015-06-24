@@ -1,11 +1,22 @@
 {
   "name": "trello-quicklist",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ --watch --out-dir bin"
   },
   "author": "Sam Marshall",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "node-trello": "^1.1.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  }
 }
